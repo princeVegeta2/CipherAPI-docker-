@@ -21,6 +21,9 @@ Cipher API is a RESTful web service built using C#, ASP.NET Core 6.0, and implem
 2. Navigate to the project folder
 3. Restore dependancies: dotnet restore
 
+## Docker
+You may want to put the Dockerfile outside of the main project folder if you want to image it on Heroku for example.
+
 ## Usage
 To run the project locally, use the following command: dotnet run
 
@@ -41,11 +44,11 @@ This will usually start the API at `http://localhost:5000` or `https://localhost
  Example response payload:
    ```json
    {
-    "encryptedText": "Uryyb, Jbeyq!"
+    "encryptedText": "Uryyb, Jbeyq!" //updated to return JSON object instead of plain text
    }
    ```
 
 ## Testing
 
-You can test the API using tools like Postman or Swagger UI by importing the OpenAPI specification available at http://localhost:5000/swagger/v1/swagger.json or https://localhost:5001/swagger/v1/swagger.json.
+You can test the API using tools like Postman.
 
